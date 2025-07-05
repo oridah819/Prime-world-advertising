@@ -2,29 +2,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
   color: #333;
+  line-height: 1.6;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
+/* Header */
 header {
-  background: #1a1a1a;
+  background-color: #222;
   color: #fff;
   padding: 20px 0;
 }
 
 header h1 {
   text-align: center;
+  font-size: 32px;
 }
 
 nav {
@@ -33,52 +29,92 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #ff9800;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-nav a.active, nav a:hover {
+nav a:hover,
+nav a.active {
+  color: #fff;
   text-decoration: underline;
 }
 
+/* Hero Section */
 .hero {
-  background: url('your-banner-image.jpg') no-repeat center center/cover;
-  color: #fff;
-  padding: 80px 20px;
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: white;
   text-align: center;
+  padding: 100px 20px;
 }
 
-.hero .btn {
-  background: #ff6600;
-  color: #fff;
-  padding: 10px 20px;
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 20px;
   text-decoration: none;
   margin-top: 20px;
-  display: inline-block;
   border-radius: 5px;
+  font-weight: bold;
 }
 
-.about-snippet {
-  background: #fff;
-  padding: 40px 20px;
+/* Services Section */
+.features {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
   text-align: center;
 }
 
-.about-snippet .btn-secondary {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  margin-top: 10px;
+.features h2 {
+  margin-bottom: 40px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #ff9800;
+}
+
+/* Footer */
 footer {
-  background: #1a1a1a;
-  color: #fff;
+  background-color: #222;
+  color: white;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
   margin-top: 40px;
 }
