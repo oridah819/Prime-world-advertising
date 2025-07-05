@@ -6,14 +6,14 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #E0FFFF; /* Light Cyan */
+  background-color: #ffffff;
   color: #191970; /* Midnight Blue */
 }
 
-/* Header styles */
+/* Header */
 header {
   background-color: #191970; /* Midnight Blue */
-  color: white;
+  color: #ffffff;
   padding: 20px 0;
 }
 
@@ -25,8 +25,8 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -35,17 +35,19 @@ header {
 
 header h1 {
   font-size: 28px;
-  color: #E0FFFF; /* Light Cyan */
 }
 
+/* Navigation */
 nav {
+  background-color: #ffffff;
   text-align: center;
-  background-color: #6495ED; /* Cornflower Blue */
   padding: 10px 0;
+  border-top: 2px solid #191970;
+  border-bottom: 2px solid #191970;
 }
 
 nav a {
-  color: white;
+  color: #191970;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -56,41 +58,49 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
-  background: url('hero-image.jpg') no-repeat center center/cover;
-  padding: 100px 20px;
+  background-color: #ffffff;
+  color: #191970;
   text-align: center;
-  color: white;
+  padding: 100px 20px;
 }
 
 .hero-content {
-  background: rgba(25, 25, 112, 0.7);
-  display: inline-block;
-  padding: 40px;
-  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .hero h2 {
   font-size: 36px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
 }
 
 .btn {
-  background-color: #6495ED;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 15px;
   display: inline-block;
+  background-color: #191970;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-/* Features section */
+/* Services Section */
 .features {
-  background: white;
   padding: 60px 20px;
+  background-color: #f4f4f4;
   text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+  color: #191970;
 }
 
 .cards {
@@ -101,11 +111,12 @@ nav a:hover {
 }
 
 .card {
-  background: #E0FFFF;
+  background: #ffffff;
+  border: 2px solid #191970;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   width: 300px;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(25, 25, 112, 0.1);
 }
 
 .card img {
@@ -116,14 +127,14 @@ nav a:hover {
 }
 
 .card h3 {
-  color: #191970;
   margin: 15px 0 10px;
+  color: #191970;
 }
 
 /* Footer */
 footer {
   background-color: #191970;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
