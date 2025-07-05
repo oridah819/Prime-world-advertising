@@ -1,0 +1,50 @@
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('your-banner-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
