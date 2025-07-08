@@ -8,90 +8,114 @@ body {
 /* Header */
 header {
   background: #ffffff;
-  border-bottom: 1px solid #191970;
-  padding: 10px 40px;
+  border-bottom: 2px solid #191970;
+  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .logo-container {
   display: flex;
   align-items: center;
 }
+
 .logo {
   height: 60px;
   width: auto;
 }
 
-/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 nav a {
-  margin-left: 20px;
   text-decoration: none;
   color: #191970;
   font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
 }
+
 nav a:hover {
   color: #000000;
 }
 
 /* Hero Section */
 .hero {
-  background: url('hero-image.jpg') center center / cover no-repeat;
-  height: 500px;
+  background: linear-gradient(rgba(25, 25, 112, 0.6), rgba(25, 25, 112, 0.6)), url('hero-image.jpg') center center / cover no-repeat;
   color: #ffffff;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(25, 25, 112, 0.6);
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-.hero p {
-  font-size: 20px;
+  padding: 40px;
 }
 
-/* Features */
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Features Section */
 .features {
   display: flex;
-  justify-content: space-around;
-  padding: 60px 40px;
-  background-color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #f8faff;
 }
+
 .card {
-  max-width: 300px;
-  background: #f0f4ff;
+  background: #ffffff;
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 .card h3 {
   color: #191970;
   margin-bottom: 10px;
 }
 
+.card p {
+  font-size: 15px;
+  color: #333;
+}
+
 /* Services Info Section */
 .services-info {
-  padding: 40px;
-  background-color: #f9f9f9;
+  background: #f1f6ff;
+  padding: 40px 20px;
   text-align: center;
 }
-.services-info h2,
+
 .services-info h3 {
   color: #191970;
+  margin-top: 0;
+}
+
+.services-info p {
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 /* Footer */
@@ -100,14 +124,17 @@ footer {
   color: #ffffff;
   padding: 20px 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 14px;
 }
+
 .footer-links a {
   margin-left: 20px;
   color: #ffffff;
   text-decoration: none;
 }
+
 .footer-links a:hover {
-  color: #cccccc;
+  text-decoration: underline;
 }
