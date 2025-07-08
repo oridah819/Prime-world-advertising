@@ -101,67 +101,21 @@ nav a:hover {
   color: #333;
   line-height: 1.6;
 }
-
 /* Services Info Section */
-.services-info.enhanced {
-  background-color: #f4f8ff;
-  padding: 60px 40px;
+.services-info {
+  background: #f1f6ff;
+  padding: 40px 20px;
   text-align: center;
-  color: #191970;
 }
 
-.services-info.enhanced h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
+.services-info h3 {
   color: #191970;
-  font-weight: 700;
+  margin-top: 0;
 }
 
-.services-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 40px;
+.services-info p {
+  margin-bottom: 20px;
   font-size: 16px;
-}
-
-.services-list li {
-  margin: 12px 0;
-  padding-left: 20px;
-  text-align: left;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-.services-list li::before {
-  content: "✅";
-  position: absolute;
-  left: 0;
-}
-
-.location-contact {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.location-contact h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #191970;
-}
-
-.location-contact p,
-.location-contact a {
-  font-size: 16px;
-  color: #000;
-  text-decoration: none;
-}
-
-.location-contact a:hover {
-  text-decoration: underline;
 }
 
 /* Footer */
