@@ -46,6 +46,29 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--highlight-color);
+<<<<<<< HEAD
+}
+
+.intro, .services {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.services ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  text-align: left;
+  display: inline-block;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+=======
+>>>>>>> 9163b012fbee1b41917e6d5715cda055dbc732f4
 }
 
 .intro, .services {
@@ -67,3 +90,4 @@ footer {
   text-align: center;
   margin-top: 2rem;
 }
+
