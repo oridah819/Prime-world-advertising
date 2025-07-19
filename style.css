@@ -59,6 +59,89 @@ nav a:hover {
   font-size: 1.2em;
 }
 
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Feature Section */
+.feature-section {
+  background-color: #e3f2fd; /* Primary-10 */
+  padding: 64px 0;
+}
+
+.wrapper-m {
+  padding-top: 128px;
+}
+
+.sm-p-y-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* Grid Layout */
+.w-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .w-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Content Wrapper */
+.feature-content-wrapper.left {
+  text-align: left;
+}
+
+/* Heading & Text Colors */
+.heading.m {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.c-t-primary-100 {
+  color: #0d47a1; /* Deep Blue */
+}
+
+.c-t-primary-60 {
+  color: #1976d2; /* Lighter Blue */
+}
+
+.body-text.m {
+  font-size: 1rem;
+  color: #0d47a1;
+}
+
+/* Utility Classes */
+.c-b-primary-10 {
+  background-color: #e3f2fd;
+}
+
+.s-p-t-128 {
+  padding-top: 128px;
+}
+
 /* Features Section */
 .features {
   display: grid;
